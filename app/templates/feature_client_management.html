@@ -1,0 +1,16 @@
+{% block body_class %}feature-page{% endblock %}
+{% extends 'base.html' %}
+{% block content %}
+<section class="section">
+  <div class="container detail-grid">
+    <div>
+      <h1>Client management</h1>
+      <p class="lead">Keep client profiles, preferences, and history organized in one place.</p>
+      <p>Make every appointment more personal with a clean view of client history, preferences, and prior visits.</p>
+    </div>
+    <div class="image-card feature-media">
+      <img src="{{ url_for('static', filename='img/workflow-static.png') }}" alt="Client management">
+    </div>
+  </div>
+</section>
+{% endblock %}

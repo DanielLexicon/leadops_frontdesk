@@ -1,0 +1,16 @@
+{% block body_class %}feature-page{% endblock %}
+{% extends 'base.html' %}
+{% block content %}
+<section class="section">
+  <div class="container detail-grid">
+    <div>
+      <h1>Customer outreach</h1>
+      <p class="lead">Send offers and follow‑ups to drive repeat bookings and keep clients engaged.</p>
+      <p>Stay connected with past clients through targeted follow‑ups, promotions, and reminders that keep your calendar active.</p>
+    </div>
+    <div class="image-card feature-media">
+      <img src="{{ url_for('static', filename='img/demo-static.png') }}" alt="Customer outreach">
+    </div>
+  </div>
+</section>
+{% endblock %}

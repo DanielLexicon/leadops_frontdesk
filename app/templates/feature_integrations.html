@@ -1,0 +1,16 @@
+{% block body_class %}feature-page{% endblock %}
+{% extends 'base.html' %}
+{% block content %}
+<section class="section">
+  <div class="container detail-grid">
+    <div>
+      <h1>Existing system integration</h1>
+      <p class="lead">Works with the booking software you already use—no migration required.</p>
+      <p>Connect your current booking system so you can benefit from AI reception without changing tools or workflows.</p>
+    </div>
+    <div class="image-card feature-media">
+      <img src="{{ url_for('static', filename='img/pricing-static.png') }}" alt="System integration">
+    </div>
+  </div>
+</section>
+{% endblock %}

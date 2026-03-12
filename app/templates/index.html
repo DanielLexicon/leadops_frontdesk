@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">AI Booking Assistant</span>
+      <h1>Never miss a booking again. Automate your schedule with AI.</h1>
+      <p class="lead">
+        A digital front desk for salons, barbershops, spas, and beauty businesses. Capture inquiries, confirm appointments, reduce no‑shows, and keep clients engaged—without extra staff.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#demo">Book a Demo</a>
+        <a class="btn btn-secondary" href="#features">See all features</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="{{ url_for('static', filename='img/hero-static.png') }}" alt="Salon booking platform visual">
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features">
+  <div class="container section-head">
+    <div>
+      <span class="eyebrow">Core capabilities</span>
+      <h2>Everything you need to fill your schedule</h2>
+    </div>
+    <div class="section-copy">
+      <p>LeadOps Front Desk helps appointment‑based businesses capture every booking opportunity and stay connected with clients through every step.</p>
+      <div class="section-actions">
+        <a class="btn btn-secondary" href="#pricing">See pricing</a>
+        <a class="btn btn-primary" href="#demo">Call for a demo</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container image-grid">
+    <a class="image-card card-link" href="/features/voice-receptionist">
+      <img src="{{ url_for('static', filename='img/benefits-static.png') }}" alt="Reception and booking">
+      <h3>AI voice receptionist</h3>
+      <p>Answer calls and booking requests instantly, 24/7, without front‑desk overload.</p>
+    </a>
+
+    <a class="image-card card-link" href="/features/automated-confirmations">
+      <img src="{{ url_for('static', filename='img/features-static.png') }}" alt="Booking confirmations">
+      <h3>Automated confirmations</h3>
+      <p>Send booking confirmations and reminders automatically to reduce no‑shows.</p>
+    </a>
+
+    <a class="image-card card-link" href="/features/schedule-optimization">
+      <img src="{{ url_for('static', filename='img/results-static.png') }}" alt="Schedule optimization">
+      <h3>Schedule optimization</h3>
+      <p>Fill open time slots and maximize revenue from every business day.</p>
+    </a>
+  </div>
+</section>
+
+<section class="section muted" id="benefits">
+  <div class="container image-grid">
+    <a class="image-card card-link" href="/features/integrations">
+      <img src="{{ url_for('static', filename='img/pricing-static.png') }}" alt="System integration">
+      <h3>Existing system integration</h3>
+      <p>Works with the booking software you already use—no migration or learning curve.</p>
+    </a>
+
+    <a class="image-card card-link" href="/features/outreach">
+      <img src="{{ url_for('static', filename='img/demo-static.png') }}" alt="Customer outreach">
+      <h3>Customer outreach</h3>
+      <p>Send offers and follow‑ups to drive repeat bookings and keep clients engaged.</p>
+    </a>
+
+    <a class="image-card card-link" href="/features/client-management">
+      <img src="{{ url_for('static', filename='img/workflow-static.png') }}" alt="Client management">
+      <h3>Client management</h3>
+      <p>Keep client profiles, preferences, and history organized in one place.</p>
+    </a>
+  </div>
+</section>
+
+<section class="section" id="pricing">
+  <div class="container section-head">
+    <div>
+      <span class="eyebrow">Pricing</span>
+      <h2>Plans for single locations and growing teams</h2>
+    </div>
+    <div class="section-copy">
+      <p>Simple tiers based on staff size and support needs. All plans include after‑hours call handling and booking automation.</p>
+    </div>
+  </div>
+
+  <div class="container pricing-grid">
+    <div class="pricing-card">
+      <h3>Starter</h3>
+      <p class="price">$ / month</p>
+      <ul>
+        <li>Up to 8 staff</li>
+        <li>Email + chat support</li>
+        <li>Call handling + booking</li>
+      </ul>
+      <a class="btn btn-secondary" href="#demo">Book a Demo</a>
+    </div>
+    <div class="pricing-card featured">
+      <h3>Growth</h3>
+      <p class="price">$ / month</p>
+      <ul>
+        <li>Up to 16 staff</li>
+        <li>Priority support</li>
+        <li>More voice options</li>
+      </ul>
+      <a class="btn btn-primary" href="#demo">Book a Demo</a>
+    </div>
+    <div class="pricing-card">
+      <h3>Multi‑Location</h3>
+      <p class="price">$ / location</p>
+      <ul>
+        <li>Unlimited staff</li>
+        <li>24/7 phone support</li>
+        <li>Advanced AI configuration</li>
+      </ul>
+      <a class="btn btn-secondary" href="#demo">Book a Demo</a>
+    </div>
+  </div>
+</section>
+
+<section class="section cta" id="demo">
+  <div class="container cta-grid">
+    <div>
+      <h2>See how it works for your business</h2>
+      <p>Tell us about your salon or spa and we’ll show you how the AI front desk fits your workflow.</p>
+    </div>
+    <a class="btn btn-primary" href="#">Request a demo</a>
+  </div>
+</section>
+
+{% endblock %}

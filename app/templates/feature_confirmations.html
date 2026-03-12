@@ -1,0 +1,16 @@
+{% block body_class %}feature-page{% endblock %}
+{% extends 'base.html' %}
+{% block content %}
+<section class="section">
+  <div class="container detail-grid">
+    <div>
+      <h1>Automated confirmations</h1>
+      <p class="lead">Reduce no‑shows and keep clients committed with instant confirmations and reminders.</p>
+      <p>Send reliable booking confirmations, reminders, and schedule updates so your clients stay informed and your calendar stays full.</p>
+    </div>
+    <div class="image-card feature-media">
+      <img src="{{ url_for('static', filename='img/features-static.png') }}" alt="Booking confirmations">
+    </div>
+  </div>
+</section>
+{% endblock %}

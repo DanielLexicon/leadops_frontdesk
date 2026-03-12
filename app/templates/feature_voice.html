@@ -1,0 +1,16 @@
+{% block body_class %}feature-page{% endblock %}
+{% extends 'base.html' %}
+{% block content %}
+<section class="section">
+  <div class="container detail-grid">
+    <div>
+      <h1>AI voice receptionist</h1>
+      <p class="lead">Answer calls instantly, 24/7, and capture every booking opportunity without front‑desk overload.</p>
+      <p>Designed for salons and spas with high call volume, this feature handles common questions, captures booking requests, and routes clients to the right service quickly and professionally.</p>
+    </div>
+    <div class="image-card feature-media">
+      <img src="{{ url_for('static', filename='img/benefits-static.png') }}" alt="Reception and booking">
+    </div>
+  </div>
+</section>
+{% endblock %}

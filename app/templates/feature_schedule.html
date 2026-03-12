@@ -1,0 +1,16 @@
+{% block body_class %}feature-page{% endblock %}
+{% extends 'base.html' %}
+{% block content %}
+<section class="section">
+  <div class="container detail-grid">
+    <div>
+      <h1>Schedule optimization</h1>
+      <p class="lead">Fill open time slots and maximize revenue from every business day.</p>
+      <p>Intelligent booking suggestions help keep your team utilized and your calendar organized, even during busy or uneven booking periods.</p>
+    </div>
+    <div class="image-card feature-media">
+      <img src="{{ url_for('static', filename='img/results-static.png') }}" alt="Schedule optimization">
+    </div>
+  </div>
+</section>
+{% endblock %}

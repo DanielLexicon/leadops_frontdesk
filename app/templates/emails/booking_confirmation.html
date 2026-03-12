@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Booking Confirmation</title>
+</head>
+<body style="margin:0;padding:0;background:#f6f3ee;font-family:Arial,sans-serif;color:#1f2937;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="padding:32px 0;">
+    <tr>
+      <td align="center">
+        <table width="620" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:16px;overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,.08);">
+          <tr>
+            <td style="padding:24px;background:#111827;color:#fff;">
+              <h2 style="margin:0;font-size:20px;">LeadOps Front Desk</h2>
+              <p style="margin:6px 0 0;font-size:13px;opacity:.85;">Booking request received</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:28px;">
+              <p style="font-size:16px;">Hi {{ booking.full_name }},</p>
+              <p style="font-size:14px;line-height:1.6;">
+                We received your booking request for <strong>{{ booking.service }}</strong>.
+              </p>
+
+              <div style="background:#f3f4f6;padding:14px;border-radius:10px;margin:16px 0;">
+                <p style="margin:0;font-size:14px;"><strong>Preferred date:</strong> {{ pretty_date }}</p>
+                <p style="margin:6px 0 0;font-size:14px;"><strong>Preferred time:</strong> {{ booking.preferred_time }}</p>
+              </div>
+
+              <p style="font-size:14px;line-height:1.6;">
+                We’ll confirm shortly with final details. If you need to update anything, just reply to this email.
+              </p>
+
+              <p style="margin-top:24px;font-size:14px;">— LeadOps Front Desk</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:16px 28px;background:#f9fafb;font-size:12px;color:#6b7280;">
+              © 2026 LeadOps AI. All rights reserved.
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

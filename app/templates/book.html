@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %}Book a Demo | LeadOps Front Desk{% endblock %}
+{% block content %}
+<section class="section">
+  <div class="container" style="max-width:760px;">
+    <h1>Request a booking</h1>
+    <p class="lead">Tell us what service you need and your preferred time. We’ll confirm shortly.</p>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <div class="flash-area">
+          {% for category, message in messages %}
+            <div class="flash flash-{{ category }}">{{ message }}</div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    <form method="POST">
+      {{ form.hidden_tag() }}
+
+      <label>{{ form.full_name.label }}</label>
+      {{ form.full_name() }}
+
+      <label>{{ form.email.label }}</label>
+      {{ form.email() }}
+
+      <label>{{ form.phone.label }}</label>
+      {{ form.phone() }}
+
+      <label>{{ form.service.label }}</label>
+      {{ form.service() }}
+
+      <label>{{ form.preferred_date.label }}</label>
+      {{ form.preferred_date() }}
+
+      <label>{{ form.preferred_time.label }}</label>
+      {{ form.preferred_time() }}
+
+      <label>{{ form.notes.label }}</label>
+      {{ form.notes(rows=4) }}
+
+      {{ form.submit(class_="btn btn-primary") }}
+    </form>
+  </div>
+</section>
+{% endblock %}
